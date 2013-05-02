@@ -1,5 +1,5 @@
 require "mina/net_ssh/version"
-require "mina/ssh_helpers"
+require "mina/net_ssh/ssh_helpers"
 
 module Mina
   module NetSsh
