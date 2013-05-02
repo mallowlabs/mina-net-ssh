@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'mina/net/ssh/version'
+require 'mina/net_ssh/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "mina-net-ssh"
-  spec.version       = Mina::Net::Ssh::VERSION
+  spec.version       = Mina::NetSsh::VERSION
   spec.authors       = ["mallowlabs"]
   spec.email         = ["mallowlabs@gmail.com"]
   spec.description   = %q{TODO: Write a gem description}
