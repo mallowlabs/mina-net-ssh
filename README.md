@@ -1,6 +1,7 @@
-# Mina::Net::Ssh
+# Mina::NetSsh
 
-TODO: Write a gem description
+A Mina extension for using net-ssh.
+Add supporting password to Mina.
 
 ## Installation
 
@@ -18,7 +19,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    require 'mina/net_ssh' # Add Here
+    
+    set :domain, 'your.host'
+    set :user, 'user'
+    set :password, 'password' # Add Here
+    
+    task :ls do
+      queue 'ls -l'
+    end
 
 ## Contributing
 
