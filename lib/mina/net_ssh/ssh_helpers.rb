@@ -13,7 +13,7 @@ module Mina
 
         puts cmd
       else
-        Net::SSH.start(domain!, user, :password => password) do |s|
+        Net::SSH.start(domain!, user, :password => password, :port => (port || 22)) do |s|
           cmd.split("\n").each do |line|
             puts s.exec!(line)
           end

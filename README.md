@@ -24,6 +24,7 @@ Or install it yourself as:
     set :domain, 'your.host'
     set :user, 'user'
     set :password, 'password' # Add Here
+    set :port, 10022 # Add Here(default: 22)
     
     task :ls do
       queue 'ls -l'
